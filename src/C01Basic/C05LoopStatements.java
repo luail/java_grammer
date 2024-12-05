@@ -213,19 +213,19 @@ public class C05LoopStatements {
 //            }
 //        }
 
-//        100~200까지 수 중에서 가장 작은 소수를 출력
-        for (int i = 100; i <= 200; i++) {
-            boolean answer = false;
-            for (int j = 2; j*j <= i; j++) {
+//        100~200까지 수 중에서 소수인 수의 개수 출력
+        int count = 0;
+        for (int i = 100; i < 201; i++) {
+            boolean result = true;
+            for (int j = 2; j <= Math.sqrt(i); j++) {
                 if (i % j == 0) {
-                    answer = true;
+                    result = false;
                     break;
                 }
-            }
-            if (!answer){
-                System.out.println(i);
-                break ;
+            }if (result) {
+                count++;
             }
         }
+        System.out.println(count);
     }
 }
