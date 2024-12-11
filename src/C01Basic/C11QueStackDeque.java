@@ -51,13 +51,15 @@ public class C11QueStackDeque {
 //        long endTime4 = System.currentTimeMillis();
 //        System.out.println("ArrayList 조회속도 " + (endTime4-startTime4));
 
-//        Queue<String> myQue = new LinkedList<>();
-//        myQue.add("문서1");
-//        myQue.add("문서2");
-//        myQue.add("문서3");
-//        while (!myQue.isEmpty()) {
-//            System.out.println(myQue.poll());
-//        }
+        Queue<String> myQue = new LinkedList<>();
+        myQue.add("문서1");
+        myQue.add("문서2");
+        myQue.add("문서3");
+        while (!myQue.isEmpty()) {
+            System.out.println(myQue.peek());
+            System.out.println(myQue.poll());
+        }
+        System.out.println(myQue);
 //
 ////        길이제한 Que : ArrayBlockingQueue
 //        Queue<String> blockingQue = new ArrayBlockingQueue<>(3);

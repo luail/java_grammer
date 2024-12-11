@@ -192,7 +192,7 @@ public class C07Array {
 ////        이진검색(binary search) - 이분탐색 (백준 1920번 문제)
 ////        사전에 오름차순 정렬이 되어 있어야 이진검색 가능.
 //        int[] arr = {1,3,6,8,9,11,15};
-//        System.out.println(Arrays.binarySearch(arr,15));
+//        System.out.println(Arrays.binarySearch(arr,13));
 //
 ////        배열 간 비교.
 //        int[] arr1 = {10,20,30};

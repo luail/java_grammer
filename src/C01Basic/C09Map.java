@@ -122,5 +122,37 @@ public class C09Map {
         while (myIters.hasNext()) {
             System.out.println(myIters.next());
         }
+
+//        더 맵게 - 프로그래머스
+
+////        stack
+//        Stack<Integer> st = new Stack<>();
+//        st.push(10);
+//        st.push(20);
+//        st.push(30);
+//        System.out.println(st.pop());
+//        System.out.println(st.peek());
+//        System.out.println(st.size());
+//        System.out.println(st.isEmpty());
+//
+//        while (!st.isEmpty()) {
+//            System.out.println(st.pop());
+//        }
+
+//        같은 숫자는 싫어 - 프로그래머스
+
+//        Deque : addFirst, addLast, pollFirst, pollLast
+        Deque<Integer> d1 = new ArrayDeque<>();
+        d1.addLast(10);
+        d1.addLast(20);
+        System.out.println(d1);
+        d1.addFirst(30);
+        System.out.println(d1);
+        System.out.println(d1.peekFirst()); //30
+        System.out.println(d1.peekLast());  //20
+        System.out.println(d1.pollLast());  //20
+        System.out.println(d1.peekFirst());  //30
+
+//        올바른 괄호 - 프로그래머스 (다시 풀어보기)
     }
 }

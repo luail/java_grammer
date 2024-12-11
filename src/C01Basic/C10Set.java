@@ -1,9 +1,13 @@
 package C01Basic;
 
+import C02ClassBasic.C0201Method;
+
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.TreeSet;
+
+import static C02ClassBasic.C0201Method.sum;
 
 public class C10Set {
     public static void main(String[] args) {
@@ -44,18 +48,19 @@ public class C10Set {
 //        treeSet.add(1);
 //        System.out.println(treeSet);
 
-//        집합관련함수 : 교집합(retailAll), 합집합(addAll), 차집합(removeAll)
-        Set<String> set1 = new HashSet<>();
-        set1.add("java");
-        set1.add("pyhton");
-        set1.add("javascript");
-        Set<String> set2 = new HashSet<>();
-        set2.add("java");
-        set2.add("html");
-        set2.add("css");
-//        set1.retainAll(set2);
-//        set1.addAll(set2);
-        set1.removeAll(set2);
-        System.out.println(set1);
+////        집합관련함수 : 교집합(retailAll), 합집합(addAll), 차집합(removeAll)
+//        Set<String> set1 = new HashSet<>();
+//        set1.add("java");
+//        set1.add("pyhton");
+//        set1.add("javascript");
+//        Set<String> set2 = new HashSet<>();
+//        set2.add("java");
+//        set2.add("html");
+//        set2.add("css");
+////        set1.retainAll(set2);
+////        set1.addAll(set2);
+//        set1.removeAll(set2);
+//        System.out.println(set1);
+        System.out.println(sum(1,20));
     }
 }
