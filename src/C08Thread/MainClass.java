@@ -2,6 +2,7 @@ package C08Thread;
 
 public class MainClass {
 //    스레드를 이해할때는 사용자관점에서 생각하는 것이 좋다.
+//    스레드란? 작업을 처리하는 주체.
     public static void main(String[] args) {
 ////        스레드 생성방법 2가지.
 ////        방법1. 스레드 클래스 상속방식.
